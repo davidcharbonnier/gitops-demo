@@ -34,7 +34,7 @@ kubectl create namespace flux
 Installation de Flux:
 
 ```bash
-helm upgrade -i flux fluxcd/flux --set git.url=git@github.com:davidcharbonnier/demo-flux --namespace flux
+helm upgrade -i flux fluxcd/flux --set git.url=git@github.com:davidcharbonnier/flux-demo --namespace flux
 ```
 
 Installation de Helm Operator:
