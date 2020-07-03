@@ -2,12 +2,12 @@
 
 Table des matières:
 
-1. [Installation de Flux](#Installation de flux)
+1. [Installation de Flux](#Installation-de-flux)
   1. [Prérequis](#Prérequis)
   2. [Installation](#Installation)
   3. [Configuration](#Configuration)
-2. [Syncronisation initiale et déploiement des applicatifs](#Syncronisation initiale et déploiement des applicatifs)
-3. [Mise à jour applicative](#Mise à jour applicative)
+2. [Syncronisation initiale et déploiement des applicatifs](#Syncronisation-initiale-et-déploiement-des-applicatifs)
+3. [Mise à jour applicative](#Mise-à-jour-applicative)
 
 ## Installation de Flux
 
