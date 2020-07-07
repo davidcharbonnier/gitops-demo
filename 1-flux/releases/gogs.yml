@@ -9,7 +9,7 @@ spec:
   releaseName: gogs
   chart:
     repository: https://kubernetes-charts.storage.googleapis.com/
-    name: stable/concourse
+    name: gogs
     version: 0.7.11
   values:
     serviceType: NodePort
