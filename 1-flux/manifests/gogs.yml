@@ -190,12 +190,11 @@ metadata:
   labels:
     chart: "gogs-0.7.11"
 spec:
-  type: NodePort
   ports:
-  - port: 80
+  - port: 8080
     targetPort: 3000
     name: gogs-http
-  - port: 22
+  - port: 2222
     targetPort: 22
     name: gogs-ssh
   selector:
@@ -213,6 +212,9 @@ metadata:
     release: "gogs"
     heritage: "Helm"
 spec:
+  selector:
+    matchLabels:
+      app: gogs-postgresql
   template:
     metadata:
       labels:
