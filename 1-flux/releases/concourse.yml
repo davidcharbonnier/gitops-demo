@@ -16,8 +16,10 @@ spec:
     service:
       api:
         type: NodePort
+        NodePort: 30001
       workerGateway:
         type: NodePort
+        NodePort: 30002
     persistence:
       enabled: false
     postgresql:
