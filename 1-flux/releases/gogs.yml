@@ -8,7 +8,7 @@ metadata:
 spec:
   releaseName: gogs
   chart:
-    repository: https://kubernetes-charts.storage.googleapis.com/
+    repository: https://kubernetes-charts-incubator.storage.googleapis.com
     name: gogs
     version: 0.7.11
   values:
