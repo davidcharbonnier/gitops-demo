@@ -1,0 +1,20 @@
+apiVersion: helm.fluxcd.io/v1
+kind: HelmRelease
+metadata:
+  name: gogs
+  namespace: gogs
+  annotations:
+    fluxcd.io/automated: "true"
+    fluxcd.io/tag.chart-image: "*"
+spec:
+  releaseName: gogs
+  chart:
+    name: stable/concourse
+    version: 0.7.11
+  values:
+    serviceType: NodePort
+    persistence:
+      enabled: false
+    postgresql:
+      persistence:
+        enabled: false

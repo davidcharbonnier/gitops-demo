@@ -1,0 +1,25 @@
+apiVersion: helm.fluxcd.io/v1
+kind: HelmRelease
+metadata:
+  name: concourse
+  namespace: concourse
+  annotations:
+    fluxcd.io/automated: "true"
+    fluxcd.io/tag.chart-image: "*"
+spec:
+  releaseName: concourse
+  chart:
+    repository: https://concourse-charts.storage.googleapis.com/
+    name: concourse
+    version: 11.2.2
+  values:
+    service:
+      api:
+        type: NodePort
+      workerGateway:
+        type: NodePort
+    persistence:
+      enabled: false
+    postgresql:
+      persistence:
+        enabled: false
