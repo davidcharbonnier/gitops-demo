@@ -13,6 +13,7 @@ spec:
     version: 11.2.2
   values:
     imageTag: "6.2.0"
+    #imageTag: "6.3.0"
     persistence:
       enabled: false
     postgresql:
