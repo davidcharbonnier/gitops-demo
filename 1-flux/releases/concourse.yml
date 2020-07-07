@@ -4,8 +4,7 @@ metadata:
   name: concourse
   namespace: concourse
   annotations:
-    fluxcd.io/automated: "true"
-    fluxcd.io/tag.chart-image: "*"
+    fluxcd.io/automated: "false"
 spec:
   releaseName: concourse
   chart:
